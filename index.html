@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brushouse</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="app.css" rel="stylesheet"></head>
+  <body>
+    <div id="container" class="container">
+      <header id="header" class="header">
+        <div class="header__info">
+          <div class="header__logo-wrap">
+            <p>ООО "Modern House"</p>
+            <img src="./assets/logo.png" alt="logo">
+            <p>Работаем с 2006 г.</p>
+          </div>
+          <p class="header__address">
+            г. Минск, пер. С.Ковалевской 54/1, офис 213.
+          </p>
+          <div class="header__messengers">
+            <p class="header__messenger"><img src="./assets/m-viber.png" alt="viber"></p>
+            <p class="header__messenger"><img src="./assets/m-whatsapp.png" alt="whatsapp"></p>
+            <p class="header__messenger"><img src="./assets/m-telegram.png" alt="telegram"></p>
+          </div>
+          <div class="header__numbers-welcom">
+            <p class="header__number-welcom">+375 (44) 716-01-60</p>
+            <p class="header__number-welcom">+375 (44) 718-01-80</p>
+            <p class="header__email">info@maodern-house.by</p>
+          </div>
+          <div class="header__numbers-other">
+            <p class="header__number-other">+375 (33) 602-76-73</p>
+            <p class="header__number-other">+375 (17) 224-06-76</p>
+          </div>
+          <button class="header__button">Вызвать бесплатно замерщика</button>  
+        </div>
+        
+        <div class="header__promotion promotion">
+          <div>
+            <h1 class="promotion__header">Изготовим и впишем <span>шкаф-купе</span> в любу стену вашего дома</h1>
+            <p class="promotion__text">с колесиками, которые не сломаются через год</p>
+            <p>с дверцами, которые не едят вашу одежду</p>
+            <p>с 2-х летней гарантией</p>
+          </div>
+          <div>
+            <img src="./assets/you-img.png" alt="">
+          </div>
+          <div class="promotion__form-wrap">
+            <form action="" name="promotion" class="request-form">
+              <h3  class="request-form__form-header">Хотите разработать дизайн шкафа за 1 день?</h3>
+              <p class="request-form__form-text">Оствьте заявку для консультации с дизайнером!</p>
+              <input type="text" class="request-form__input" placeholder="Введите номер телефона">
+              <button type="submit" class="request-form__btn">Оставить заявку</button>
+              <p class="request-form__form-text">Ваши персональные данные будут защищены</p>
+            </form>
+            <button class="promotion__btn-look">
+              <i class="fas fa-play-circle"></i>
+              Смотреть видео о компании
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="test">
+          <h2 class="test__header">Пройдите тест за 1 минуту, чтобы узнать стоимость мебели и получить бесплатные бонусы:</h2>
+          <div class="test__bonuses">
+            <div class="test__bonus test__bonus_1">
+              <p class="test__bonus-text">Дополнительную <span>скидку в 5%</span></p>
+            </div>
+
+            <div class="test__bonus test__bonus_2">
+              <p class="test__bonus-text">Целых <span>5 вариантов</span> дизайна шкафа!</p>
+            </div>
+            
+            <div class="test__bonus test__bonus_3">
+              <p class="test__bonus-text"><span>Экскурсию</span> на наше производство</p>
+            </div>
+
+            <div class="test__bonus test__bonus_4">
+              <p class="test__bonus-text"><span>Замер, доставку и сборку шкафа-купе</span></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="quiz">
+          <div class="quiz__form-wrap">
+            <h3 class="quiz__header">Здорово, что вы помогаете нашим менеджерам быстрее помочь вам!</h3>
+            <form action="" name="promotion" class="request-form">
+              <h3  class="request-form__header">Хотите разработать дизайн шкафа за 1 день?</h3>
+              <p class="request-form__text">Оствьте заявку для консультации с дизайнером!</p>
+              <input type="text" class="request-form__input" placeholder="Введите номер телефона">
+              <button type="submit" class="request-form__btn">Оставить заявку</button>
+            </form>
+          </div>
+          <form action="" name="quiz" class="quiz-form">
+
+            <div class="quiz-form__frame">
+              <p class="quiz-form__progress">
+                <span class="quiz-form__progress-info">Вопрос 1 из 5</span>
+                <span class="quiz-form__step quiz-form__step_active"></span>
+                <span class="quiz-form__step"></span>
+                <span class="quiz-form__step"></span>
+                <span class="quiz-form__step"></span>
+                <span class="quiz-form__step"></span>
+              </p>
+              <p class="quiz-form__question">Где нужно установить шкаф?</p>
+              <div class="quiz-form__answers">
+                <div class="quiz-form__answer">
+                  <img src="./assets/quiz-hall.png" alt="hall">
+                  <label>
+                    <input type="radio" name="first-question" value="hall">
+                    В коридоре
+                  </label>
+                </div>
+
+                <div class="quiz-form__answer">
+                  <img src="./assets/quiz-bed.png" alt="bedroom">
+                  <label>
+                    <input type="radio" name="first-question" value="bed">
+                    В спальне
+                  </label>
+                </div>
+
+                <div class="quiz-form__answer">
+                  <img src="./assets/quiz-child.png" alt="childroom">
+                  <label>
+                    <input type="radio" name="first-question" value="child">
+                    В детской
+                  </label>
+                </div>
+
+                <div class="quiz-form__answer">
+                  <img src="./assets/quiz-main.png" alt="mainroom">
+                  <label>
+                    <input type="radio" name="first-question" value="main">
+                    В гостинной
+                  </label>
+                </div>
+              </div>
+              <button class="quiz-form__next" type="button">Далее</button>
+            </div>
+
+          </form>
+          <div></div>
+        </section>
+
+        <section class="request">
+          <h2 class="request__header">Шкаф-купе с элементами ваших идей</h2>
+          <p class="request__text">Чтобы получить мебель с вашим авторским дизайном, которую можно с гордостью показывать родственникам, вам потребуются:</p>
+          <div class="request__elements">
+            <div class="request__elements">
+              <div class="request__element">
+                <img src="./assets/request-paints.png" alt="paints">
+                <h4 class="request__element-header">Ваши самые интересные идеи и задумки</h4>
+                <p class="request__element-text">Главное дайте нам идею, а наши дизайнеры помогут ее усилить, используя наработанный за 14 лет опыт</p>
+              </div>
+
+              <div class="request__element">
+                <img src="./assets/request-pc.png" alt="pc">
+                <h4 class="request__element-header">Графические программы последних версий</h4>
+                <p class="request__element-text">Наши дизайнеры готовы сделать вам разборчивую 3D-модель, чтобы вы могли расчленять ее на части и менять размеры и цвета каждой детали.</p>
+              </div>
+
+              <div class="request__element">
+                <img src="./assets/request-builder.png" alt="builder">
+                <h4 class="request__element-header">Хороший и умелый замерщик с фруктами</h4>
+                <p class="request__element-text">Без точных измерений вашего помещения сделать хороший шкаф не получится. А фрукты от замерщика просто для хорошего настроения!</p>
+              </div>
+
+              <div class="request__element">
+                <img src="./assets/request-drill.png" alt="drill">
+                <h4 class="request__element-header">Европейское оборудование и первоклассные столяры</h4>
+                <p class="request__element-text">На нашем производстве как раз работают люди, за плечами которых более 5-ти лет практики. Немецкое оборудование тоже нас не подводит.</p>
+              </div>
+
+              <div class="request__element">
+                <img src="./assets/request-truck.png" alt="truck">
+                <h4 class="request__element-header">Бесплатные доставка и монтаж шкафа</h4>
+                <p class="request__element-text">Изготовить шкаф - это только полбеды! Его еще нужно аккуратно доставить в дом и сделать уборку пылесосом после монтажа. Хотите этим заморачиваться?</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="request__subheader">Оставлйте заявку, чтобы заказать шкаф с уникальным дизайном!</h2>
+          <form action="" class="proposal-form">
+            <label>
+              Введите ваше имя
+              <input type="text" placeholder="Например Иван">
+            </label>
+
+            <label>
+              Введите ваш телефон
+              <input type="text" placeholder="+375 (ХХ) ХХХ-ХХ-ХХ">
+            </label>
+
+            <label>
+              Введите ваш e-mail
+              <input type="email" placeholder="Ivan33@mail.ru">
+            </label>
+
+            <button>Пройти все шаги</button>
+          </form>
+        </section>
+
+        <section class="made">
+          <div class="made__header-wrap">
+            <div>
+              <h2 class="made__header">Шкафы, которые уже заказали</h2>
+              <p class="made__text">Мы работаем с 2006г. и нам есть, что показать вам!</p>
+            </div>
+            <button class="made__choose-btn">Нажмите и выберите категорию шкафов <i class="fas fa-chevron-down"></i></button>
+          </div>
+          <div class="made__content-wrap">
+            <h2 class="made__subheader">Двухдверные шкафы</h2>
+            <div class="made__cards">
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+
+              <div class="made__card card">
+                <img src="./assets/cupboard-1.png" alt="" class="card__img">
+                <p class="card__text">Шкаф-купе с эко кожей</p>
+                <h3 class="card__header">Бенгальский тигр</h3>
+                <div class="card__sizes">
+                  <p>Ширина - 1111</p>
+                  <p>Высота - 1111</p>
+                </div>
+                <p class="card__price">3400р</p>
+              </div>
+            </div>
+            <button class="made__more-btn">Показать больше</button>
+          </div>
+        </section>
+
+        <section class="request">
+          
+          <form action="" class="proposal-project-form">
+            <h2 class="proposal-project-form__header">Оставлйте заявку, чтобы заказать типовой проект!</h2>
+            <div class="proposal-project-form__wrap">
+              <label>
+                Введите ваше имя
+                <input type="text" placeholder="Например Иван">
+              </label>
+  
+              <label>
+                Введите ваш телефон
+                <input type="text" placeholder="+375 (ХХ) ХХХ-ХХ-ХХ">
+              </label>
+  
+              <label>
+                Введите ваш e-mail
+                <input type="email" placeholder="Ivan33@mail.ru">
+              </label>
+  
+              <button>Заказать готовый проект</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="production">
+          <h2 class="production__header">Наше производство</h2>
+          <div class="production__slider-wrap">
+            <img src="" alt="">
+            <div class="production-slider"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  <script src="bundle.js"></script></body>
+</html>
