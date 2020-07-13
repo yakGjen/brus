@@ -13,7 +13,7 @@
       <header id="header" class="header">
         <div class="header__info">
           <div class="header__logo-wrap">
-            <p>ООО "Modern House"</p>
+            <!--<p>ООО "Modern House"</p>-->
             <img src="./assets/logo.png" alt="logo">
             <p>Работаем с 2006 г.</p>
           </div>
@@ -30,16 +30,16 @@
             <p class="header__number-welcom">+375 (44) 718-01-80</p>
             <p class="header__email">info@maodern-house.by</p>
           </div>
-          <div class="header__numbers-other">
+          <!--<div class="header__numbers-other">
             <p class="header__number-other">+375 (33) 602-76-73</p>
             <p class="header__number-other">+375 (17) 224-06-76</p>
-          </div>
+          </div>-->
           <button class="header__button">Вызвать бесплатно замерщика</button>  
         </div>
         
         <div class="header__promotion promotion">
           <div>
-            <h1 class="promotion__header">Изготовим и впишем <span>шкаф-купе</span> в любу стену вашего дома</h1>
+            <h1 class="promotion__header">Изготовим и впишем <span>шкаф-купе</span> в любую стену вашего дома</h1>
             <p class="promotion__text">с колесиками, которые не сломаются через год</p>
             <p>с дверцами, которые не едят вашу одежду</p>
             <p>с 2-х летней гарантией</p>
@@ -107,7 +107,30 @@
               </p>
               <p class="quiz-form__question">Где нужно установить шкаф?</p>
               <div class="quiz-form__answers">
-                <div class="quiz-form__answer">
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz-hall.png" alt="hall">
+                  <input type="radio" name="first-question" value="hall">
+                  В коридоре
+                </label>
+
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz-bed.png" alt="bedroom">
+                  <input type="radio" name="first-question" value="bed">
+                  В спальне
+                </label>
+
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz-child.png" alt="childroom">
+                  <input type="radio" name="first-question" value="child">
+                  В детской
+                </label>
+
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz-main.png" alt="mainroom">
+                  <input type="radio" name="first-question" value="main">
+                  В гостинной
+                </label>
+                <!--<div class="quiz-form__answer">
                   <img src="./assets/quiz-hall.png" alt="hall">
                   <label>
                     <input type="radio" name="first-question" value="hall">
@@ -137,7 +160,7 @@
                     <input type="radio" name="first-question" value="main">
                     В гостинной
                   </label>
-                </div>
+                </div>-->
               </div>
               <button class="quiz-form__next" type="button">Далее</button>
             </div>
@@ -363,7 +386,7 @@
               <input type="email" placeholder="Ivan33@mail.ru">
             </label>
 
-            <button>Пройти все шаги</button>
+            <button>Оставить заявку</button>
           </form>
         </section>
 
@@ -531,9 +554,9 @@
         <section class="clients">
           <h2 class="clients__header">Что говорят наши клиенты</h2>
           <div class="clients__video-wrap">
-            <img src="./assets/video-1.png" alt="" class="clients-video">
-            <img src="./assets/video-2.png" alt="" class="clients-video">
-            <img src="./assets/video-3.png" alt="" class="clients-video">
+            <img src="./assets/video-1.png" alt="" class="clients__video">
+            <img src="./assets/video-2.png" alt="" class="clients__video">
+            <img src="./assets/video-3.png" alt="" class="clients__video">
           </div>
           <div class="clients__feedback-wrap">
             <div class="clients-card">
