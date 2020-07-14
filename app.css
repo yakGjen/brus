@@ -1408,85 +1408,77 @@ table {
     border-radius: 6px; }
     @media (max-width: 1100px) {
       .contacts__card {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
-    @media (max-width: 745px) {
+        padding: 57px 60px; } }
+    @media (max-width: 920px) {
       .contacts__card {
-        padding: 37px; } }
-  @media (max-width: 1100px) {
-    .contacts__numbers-welcom {
-      -webkit-box-ordinal-group: 4;
-          -ms-flex-order: 3;
-              order: 3;
-      width: 30%;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
-  @media (max-width: 745px) {
-    .contacts__numbers-welcom {
-      width: 100%;
-      text-align: center; } }
-  @media (max-width: 455px) {
-    .contacts__numbers-welcom {
-      width: 100%; } }
+        padding: 57px 30px; } }
+    @media (max-width: 850px) {
+      .contacts__card {
+        padding: 20px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 5px;
+        grid-template-areas: "numbers in-mess" "email mess"; } }
+    @media (max-width: 570px) {
+      .contacts__card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "in-mess" "mess" "numbers" "email";
+        gap: 20px; } }
+  .contacts__numbers-welcom {
+    grid-area: numbers; }
+    @media (max-width: 1100px) {
+      .contacts__numbers-welcom {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .contacts__number-welcom {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px; }
     .contacts__number-welcom:first-child {
       margin-bottom: 8px; }
+    @media (max-width: 850px) {
+      .contacts__number-welcom {
+        text-align: center; } }
   .contacts__email {
     font-size: 14px;
-    line-height: 19px; }
+    line-height: 19px;
+    grid-area: email; }
     @media (max-width: 1100px) {
       .contacts__email {
-        -webkit-box-ordinal-group: 6;
-            -ms-flex-order: 5;
-                order: 5;
-        width: 30%;
         -ms-flex-line-pack: center;
             align-content: center; } }
-    @media (max-width: 880px) {
+    @media (max-width: 850px) {
       .contacts__email {
-        width: 100%;
         text-align: center; } }
-    @media (max-width: 745px) {
-      .contacts__email {
-        margin-top: 15px; } }
   .contacts__in-messengeres {
     font-weight: bold;
     font-size: 14px;
-    line-height: 17px; }
+    line-height: 17px;
+    grid-area: in-mess; }
     @media (max-width: 1100px) {
       .contacts__in-messengeres {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
-        width: 50%;
-        text-align: center;
-        -ms-flex-item-align: start;
-            align-self: flex-start; } }
-    @media (max-width: 880px) {
-      .contacts__in-messengeres {
-        width: 100%; } }
+        text-align: center; } }
   .contacts__messengers {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    grid-area: mess; }
     @media (max-width: 1100px) {
       .contacts__messengers {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2;
-        width: 50%;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
-                justify-content: flex-start;
-        margin-bottom: 30px; } }
-    @media (max-width: 880px) {
+                justify-content: flex-start; } }
+    @media (max-width: 850px) {
       .contacts__messengers {
-        width: 100%;
-        margin-top: 20px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
