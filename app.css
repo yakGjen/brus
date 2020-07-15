@@ -1312,31 +1312,23 @@ table {
     text-align: center; }
   .clients__video-wrap {
     margin-top: 48px;
+    width: 100%; }
+  .clients__video-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    @media (max-width: 600px) {
-      .clients__video-wrap {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .clients__video {
-    max-width: 364px; }
+    max-width: 364px;
+    display: inline-block;
+    margin: 0 auto; }
     @media (max-width: 1340px) {
       .clients__video {
-        max-width: 30%;
-        margin: 0 15px 15px 0; } }
-    @media (max-width: 600px) {
-      .clients__video {
-        margin-right: 0;
-        max-width: 50%; } }
+        max-width: 90%; } }
+  .clients .slick-arrow::before {
+    color: #4F4F4F; }
   .clients__feedback-wrap {
     margin-top: 92px;
     display: -webkit-box;
