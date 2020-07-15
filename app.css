@@ -670,7 +670,8 @@ table {
           -ms-flex-align: end;
               align-items: flex-end;
       outline: none;
-      overflow: hidden; }
+      overflow: hidden;
+      margin: 0 2px; }
     .quiz .quiz-form__progress {
       margin-bottom: 51px;
       width: 100%;
