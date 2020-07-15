@@ -104,7 +104,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// import './app.scss';\nsetTimeout(() => {\n  const el = document.getElementById('container');\n  console.log(el.offsetWidth);\n}, 1000);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("// import './app.scss';\nsetTimeout(() => {\n  const el = document.getElementById('container');\n  console.log(el.offsetWidth);\n}, 1000);\n$(\".quiz-form\").slick({\n  // normal options...\n  infinite: false,\n  // the magic\n  responsive: [{\n    breakpoint: 1024,\n    settings: {\n      slidesToShow: 1,\n      infinite: false\n    }\n  }\n  /*, {\r\n      breakpoint: 600,\r\n   settings: {\r\n     slidesToShow: 2,\r\n     dots: true\r\n   }\r\n    }, {\r\n      breakpoint: 300,\r\n   settings: \"unslick\" // destroys slick\r\n    }*/\n  ]\n});\n$('.quiz-form__next').click(() => {\n  $('.slick-next').trigger('click');\n});\n$('.quiz-form__prev').click(() => {\n  $('.slick-prev').trigger('click');\n}); // $('#next-1').click(() => {\n//   $('.slick-next').trigger('click');\n// });\n\n$(\".slider\").slick({\n  // normal options...\n  infinite: false,\n  // the magic\n  responsive: [{\n    // breakpoint: 1024,\n    breakpoint: 3000,\n    settings: {\n      slidesToShow: 3 // infinite: true\n\n    }\n  }, {\n    breakpoint: 1100,\n    settings: {\n      slidesToShow: 2 // dots: true\n\n    }\n  }, {\n    breakpoint: 450,\n    settings: {\n      slidesToShow: 1 // dots: true\n\n    }\n  }\n  /*{\r\n     breakpoint: 300,\r\n  settings: \"unslick\" // destroys slick\r\n   }*/\n  ]\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

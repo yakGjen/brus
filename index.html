@@ -2,14 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brushouse</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
   <link href="app.css" rel="stylesheet"></head>
   <body>
-    <div id="container" class="container">
+    <div class="container">
       <header id="header" class="header">
         <div class="header__info">
           <div class="header__logo-wrap">
@@ -108,64 +115,34 @@
               <p class="quiz-form__question">Где нужно установить шкаф?</p>
               <div class="quiz-form__answers">
                 <label class="quiz-form__answer">
-                  <img src="./assets/quiz-hall.png" alt="hall">
+                  <img src="./assets/quiz/1.1.1.png" alt="hall">
+                  <!--<img src="./assets/quiz-hall.png" alt="hall">-->
                   <input type="radio" name="first-question" value="hall">
                   В коридоре
                 </label>
 
                 <label class="quiz-form__answer">
-                  <img src="./assets/quiz-bed.png" alt="bedroom">
+                  <img src="./assets/quiz/1.2.1.png" alt="bedroom">
                   <input type="radio" name="first-question" value="bed">
                   В спальне
                 </label>
 
                 <label class="quiz-form__answer">
-                  <img src="./assets/quiz-child.png" alt="childroom">
+                  <img src="./assets/quiz/1.3.1.png" alt="childroom">
                   <input type="radio" name="first-question" value="child">
                   В детской
                 </label>
 
                 <label class="quiz-form__answer">
-                  <img src="./assets/quiz-main.png" alt="mainroom">
+                  <img src="./assets/quiz/1.4.1.png" alt="mainroom">
                   <input type="radio" name="first-question" value="main">
                   В гостинной
                 </label>
-                <!--<div class="quiz-form__answer">
-                  <img src="./assets/quiz-hall.png" alt="hall">
-                  <label>
-                    <input type="radio" name="first-question" value="hall">
-                    В коридоре
-                  </label>
-                </div>
-
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-bed.png" alt="bedroom">
-                  <label>
-                    <input type="radio" name="first-question" value="bed">
-                    В спальне
-                  </label>
-                </div>
-
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-child.png" alt="childroom">
-                  <label>
-                    <input type="radio" name="first-question" value="child">
-                    В детской
-                  </label>
-                </div>
-
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-main.png" alt="mainroom">
-                  <label>
-                    <input type="radio" name="first-question" value="main">
-                    В гостинной
-                  </label>
-                </div>-->
               </div>
-              <button class="quiz-form__next" type="button">Далее</button>
+              <button id="next-1" class="quiz-form__next" type="button">Далее</button>
             </div>
 
-            <!--<div class="quiz-form__frame">
+            <div class="quiz-form__frame">
               <p class="quiz-form__progress">
                 <span class="quiz-form__progress-info">Вопрос 2 из 5</span>
                 <span class="quiz-form__step quiz-form__step_active"></span>
@@ -176,45 +153,38 @@
               </p>
               <p class="quiz-form__question">Какой необходим шкаф?</p>
               <div class="quiz-form__answers">
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-2-corpus.png" alt="corpus">
-                  <label>
-                    <input type="radio" name="second-question" value="corpus">
-                    Корпусный
-                  </label>
-                </div>
+                
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/2.1.1.png" alt="corpus">
+                  <input type="radio" name="second-question" value="corpus">
+                  Корпусный
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-2-embed.png" alt="embed">
-                  <label>
-                    <input type="radio" name="second-question" value="embed">
-                    Встраиваемый
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/2.2.1.png" alt="embed">
+                  <input type="radio" name="second-question" value="embed">
+                  Встраиваемый
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-2-angle.png" alt="angle">
-                  <label>
-                    <input type="radio" name="second-question" value="angle">
-                    Угловой
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/2.3.1.png" alt="angle">
+                  <input type="radio" name="second-question" value="angle">
+                  Угловой
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-main.png" alt="mainroom">
-                  <label>
-                    <input type="radio" name="second-question" value="not">
-                    Не могу определиться
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="" alt="can't select">
+                  <input type="radio" name="second-question" value="not">
+                  Не могу определиться
+                </label>
               </div>
-              <div class="quiz__btns-wrap">
+              <div class="quiz-form__btns-wrap">
                 <button class="quiz-form__prev" type="button">Назад</button>
                 <button class="quiz-form__next" type="button">Далее</button>
               </div>
-            </div>-->
+            </div>
 
-            <!--<div class="quiz-form__frame">
+            <div class="quiz-form__frame">
               <p class="quiz-form__progress">
                 <span class="quiz-form__progress-info">Вопрос 3 из 5</span>
                 <span class="quiz-form__step quiz-form__step_active"></span>
@@ -250,13 +220,13 @@
                   <span>более 3-х метров</span>
                 </label>
               </div>
-              <div class="quiz__btns-wrap">
+              <div class="quiz-form__btns-wrap">
                 <button class="quiz-form__prev" type="button">Назад</button>
                 <button class="quiz-form__next" type="button">Далее</button>
               </div>
-            </div>-->
+            </div>
 
-            <!--<div class="quiz-form__frame">
+            <div class="quiz-form__frame">
               <p class="quiz-form__progress">
                 <span class="quiz-form__progress-info">Вопрос 4 из 5</span>
                 <span class="quiz-form__step quiz-form__step_active"></span>
@@ -265,69 +235,55 @@
                 <span class="quiz-form__step quiz-form__step_active"></span>
                 <span class="quiz-form__step"></span>
               </p>
-              <p class="quiz-form__question">Где нужно установить шкаф?</p>
+              <p class="quiz-form__question">Требуемый материал шкафа?</p>
               <div class="quiz-form__answers quiz-form__answers_wrap">
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-4-dsp.png" alt="dsp">
-                  <label>
-                    <input type="radio" name="four-question" value="dsp">
-                    ДСП
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/4.1.1.png" alt="dsp">
+                  <input type="radio" name="four-question" value="dsp">
+                  ДСП
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-4-lak.png" alt="lak">
-                  <label>
-                    <input type="radio" name="four-question" value="lak">
-                    Лакомебель или лакомат
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/4.2.1.png" alt="lak">
+                  <input type="radio" name="four-question" value="lak">
+                  Лакомебель или лакомат
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-4-foto.png" alt="foto">
-                  <label>
-                    <input type="radio" name="four-question" value="foto">
-                    Фотопечать
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/4.7.1.png" alt="foto">
+                  <input type="radio" name="four-question" value="foto">
+                  Фотопечать
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-4-mirror.png" alt="mirror">
-                  <label>
-                    <input type="radio" name="four-question" value="mirror">
-                    Зеркала и стекла
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/4.3.1.png" alt="mirror">
+                  <input type="radio" name="four-question" value="mirror">
+                  Зеркала и стекла
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-4-pesk.png" alt="pesk">
-                  <label>
-                    <input type="radio" name="four-question" value="pesk">
-                    Пескоструйный рисунок
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/4.5.1.png" alt="pesk">
+                  <input type="radio" name="four-question" value="pesk">
+                  Пескоструйный рисунок
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-4-skin.png" alt="skin">
-                  <label>
-                    <input type="radio" name="four-question" value="skin">
-                    Экокожа
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="./assets/quiz/4.6.1.png" alt="skin">
+                  <input type="radio" name="four-question" value="skin">
+                  Экокожа
+                </label>
 
-                <div class="quiz-form__answer">
-                  <img src="./assets/quiz-4-skin.png" alt="not">
-                  <label>
-                    <input type="radio" name="four-question" value="not">
-                    Не могу определиться
-                  </label>
-                </div>
+                <label class="quiz-form__answer">
+                  <img src="" alt="not">
+                  <input type="radio" name="four-question" value="not">
+                  Не могу определиться
+                </label>
               </div>
-              <div class="quiz__btns-wrap">
+              <div class="quiz-form__btns-wrap">
                 <button class="quiz-form__prev" type="button">Назад</button>
                 <button class="quiz-form__next" type="button">Далее</button>
               </div>
-            </div>-->
+            </div>
 
           </form>
           <div></div>
@@ -525,7 +481,15 @@
             <div class="production-slider">
               <p class="production-slider__text">У нас есть своя производственная база с немецким оборудованием, за счет чего мы можем гарантировать качество мебели и ставить ценники на 32% ниже.</p>
               <p class="production-slider__text production-slider__text_bold">У вас есть возможность посетить наше предприятие и увидеть, как производится наша мебель!</p>
-              <div class="slider"></div>
+              
+              <div class="slider">  
+                <div class="slider__img-wrap"><img src="./assets/production/1.jpg" alt="1"></div>
+                <div class="slider__img-wrap"><img src="./assets/production/2.jpg" alt="2"></div>
+                <div class="slider__img-wrap"><img src="./assets/production/3.jpg" alt="3"></div>
+                <div class="slider__img-wrap"><img src="./assets/production/4.jpg" alt="4"></div>
+                <div class="slider__img-wrap"><img src="./assets/production/5.jpg" alt="5"></div>
+                <div class="slider__img-wrap"><img src="./assets/production/6.jpg" alt="6"></div>
+              </div>
             </div>
           </div>
           <form action="" class="proposal-project-form">
@@ -697,6 +661,19 @@
             <button type="submit">Оставить заявку</button>
           </div>
         </form>
+
+        
+        
+
+        <div class="slid" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+          <div style="display: flex; justify-content: center;"><img src="./assets/quiz/1.1.1.png" alt=""></div>
+          <div style="display: flex; justify-content: center;"><img src="./assets/quiz/1.1.1.png" alt=""></div>
+          <div style="display: flex; justify-content: center;"><img src="./assets/quiz/1.1.1.png" alt=""></div>
+          <div style="display: flex; justify-content: center;"><img src="./assets/quiz/1.1.1.png" alt=""></div>
+          <div style="display: flex; justify-content: center;"><img src="./assets/quiz/1.1.1.png" alt=""></div>
+          <div style="display: flex; justify-content: center;"><img src="./assets/quiz/1.1.1.png" alt=""></div>
+        </div>
+
       </main>
       <footer class="footer">
         <div class="footer__section">
@@ -721,5 +698,12 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
   <script src="bundle.js"></script></body>
 </html>
