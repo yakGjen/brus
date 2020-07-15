@@ -12,7 +12,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
 
   <link href="app.css" rel="stylesheet"></head>
   <body>
@@ -285,6 +285,39 @@
               </div>
             </div>
 
+            <div class="quiz-form__frame">
+              <p class="quiz-form__progress">
+                <span class="quiz-form__progress-info">Вопрос 4 из 5</span>
+                <span class="quiz-form__step quiz-form__step_active"></span>
+                <span class="quiz-form__step quiz-form__step_active"></span>
+                <span class="quiz-form__step quiz-form__step_active"></span>
+                <span class="quiz-form__step quiz-form__step_active"></span>
+                <span class="quiz-form__step quiz-form__step_active"></span>
+              </p>
+              <p class="quiz-form__question">В какой срок вам нужно изготовить и установить шкаф?</p>
+              <div class="quiz-form__answers quiz-form__answers_row">
+                <label class="quiz-form__label">
+                  <input type="radio" name="five-question" value="less 1 week">
+                  <span>В течении недели</span>
+                </label>
+
+                <label class="quiz-form__label">
+                  <input type="radio" name="five-question" value="1-2 week">
+                  <span>от 7 до 14 дней</span>
+                </label>
+
+                <label class="quiz-form__label">
+                  <input type="radio" name="five-question" value="1 month">
+                  <span>Около месяца</span>
+                </label>
+
+              </div>
+              <div class="quiz-form__btns-wrap">
+                <button class="quiz-form__prev" type="button">Назад</button>
+                <button class="quiz-form__next" type="button">Далее</button>
+              </div>
+            </div>
+
           </form>
           <div></div>
         </section>
@@ -531,31 +564,35 @@
           </div>
           
           <div class="clients__feedback-wrap">
-            <div class="clients-card">
-              <img src="./assets/clients-elena.png" alt="" class="clients-card__avatar">
-              <div class="clients-card__name-wrap">
-                <h3 class="clients-card__name">Елена</h3>
-                <p class="clients-card__date">04 апреля 2019</p>
+            <div class="clients__feedback-box">
+              <div class="clients-card">
+                <img src="./assets/clients-elena.png" alt="" class="clients-card__avatar">
+                <div class="clients-card__name-wrap">
+                  <h3 class="clients-card__name">Елена</h3>
+                  <p class="clients-card__date">04 апреля 2019</p>
+                </div>
+                <p class="clients-card__feedback">Большое спасибо! Грамотные специалисты в техническом отделе, подсказали, как улучшить типовой проект под себя! Цены вменяемые, даже не ожидала. Жалко, что офис не в центре, далеко добираться.</p>
               </div>
-              <p class="clients-card__feedback">Большое спасибо! Грамотные специалисты в техническом отделе, подсказали, как улучшить типовой проект под себя! Цены вменяемые, даже не ожидала. Жалко, что офис не в центре, далеко добираться.</p>
             </div>
-
-            <div class="clients-card">
-              <img src="./assets/clients-victor.png" alt="" class="clients-card__avatar">
-              <div class="clients-card__name-wrap">
-                <h3 class="clients-card__name">Виктор</h3>
-                <p class="clients-card__date">02 апреля 2019</p>
+            <div class="clients__feedback-box">
+              <div class="clients-card">
+                <img src="./assets/clients-victor.png" alt="" class="clients-card__avatar">
+                <div class="clients-card__name-wrap">
+                  <h3 class="clients-card__name">Виктор</h3>
+                  <p class="clients-card__date">02 апреля 2019</p>
+                </div>
+                <p class="clients-card__feedback">Хорошие цены, если сравнивать среди аналогичных компаний. Дороже, чем если заказывать у бригады возведение с нуля, но зато можно отследить весь процесс, по запросу предоставляют фото из цеха.</p>
               </div>
-              <p class="clients-card__feedback">Хорошие цены, если сравнивать среди аналогичных компаний. Дороже, чем если заказывать у бригады возведение с нуля, но зато можно отследить весь процесс, по запросу предоставляют фото из цеха.</p>
             </div>
-
-            <div class="clients-card">
-              <img src="./assets/clients-victor.png" alt="" class="clients-card__avatar">
-              <div class="clients-card__name-wrap">
-                <h3 class="clients-card__name">Сергей</h3>
-                <p class="clients-card__date">01 апреля 2019</p>
+            <div class="clients__feedback-box">
+              <div class="clients-card">
+                <img src="./assets/clients-victor.png" alt="" class="clients-card__avatar">
+                <div class="clients-card__name-wrap">
+                  <h3 class="clients-card__name">Сергей</h3>
+                  <p class="clients-card__date">01 апреля 2019</p>
+                </div>
+                <p class="clients-card__feedback">Заказал каркас с утеплением в 2017 году. Порадовало, что иготавливают с европейскими материалами. Проблем с качеством не возникало. Сделали довольно быстро.</p>
               </div>
-              <p class="clients-card__feedback">Заказал каркас с утеплением в 2017 году. Порадовало, что иготавливают с европейскими материалами. Проблем с качеством не возникало. Сделали довольно быстро.</p>
             </div>
           </div>
         
@@ -696,8 +733,8 @@
       </footer>
     </div>
 
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>-->

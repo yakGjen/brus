@@ -665,7 +665,10 @@ table {
               align-items: flex-end;
       outline: none;
       overflow: hidden;
-      margin: 0 2px; }
+      margin: 0 2px;
+      padding: 0 5px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
       @media (max-width: 700px) {
         .quiz .quiz-form__frame {
           padding: 0 5px;
@@ -1331,21 +1334,11 @@ table {
     color: #4F4F4F; }
   .clients__feedback-wrap {
     margin-top: 92px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    @media (max-width: 790px) {
-      .clients__feedback-wrap {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
+    width: 100%; }
+  .clients__feedback-box {
+    padding: 20px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .clients .clients-card {
     padding: 0 40px 40px 40px;
     -webkit-box-sizing: border-box;
@@ -1363,36 +1356,18 @@ table {
     -webkit-box-shadow: 5px 5px 40px rgba(55, 84, 170, 0.1);
             box-shadow: 5px 5px 40px rgba(55, 84, 170, 0.1);
     border-radius: 6px;
-    position: relative; }
+    position: relative;
+    margin: 0 auto;
+    height: 100% !important; }
     @media (max-width: 1340px) {
       .clients .clients-card {
-        margin: 0 15px 35px 15px;
-        max-width: 30%; } }
+        max-width: 95%;
+        -webkit-box-shadow: 5px 5px 10px rgba(55, 84, 170, 0.1);
+                box-shadow: 5px 5px 10px rgba(55, 84, 170, 0.1); } }
     @media (max-width: 1070px) {
       .clients .clients-card {
         padding: 0 15px 15px 15px;
-        width: 30% !important; } }
-    @media (max-width: 790px) {
-      .clients .clients-card {
-        max-width: 100% !important;
-        width: 100% !important;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: 1fr 1fr;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        grid-template-areas: "avatar name" "avatar feedback"; } }
-    @media (max-width: 600px) {
-      .clients .clients-card {
-        grid-template-rows: auto 1fr; } }
-    @media (max-width: 440px) {
-      .clients .clients-card {
-        padding-top: 15px;
-        grid-template-areas: "avatar name" "feedback feedback"; } }
+        max-width: 90%; } }
     .clients .clients-card__avatar {
       margin-right: 24px;
       position: relative;
