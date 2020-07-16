@@ -315,7 +315,7 @@
               </div>
               <div class="quiz-form__btns-wrap">
                 <button class="quiz-form__prev" type="button">Назад</button>
-                <button class="quiz-form__next" type="button">Далее</button>
+                <button id="second-page" class="quiz-form__next" type="button">Далее</button>
               </div>
             </div>
 
@@ -710,6 +710,152 @@
         </form>
 
       </main>
+
+      <div class="main-second">
+        <div class="answer-test">
+          <h2 class="answer-test__header">Отлично, вы закончили тест!</h2>
+          <p class="answer-test__subheader">
+            Чтобы получить обещанные бонусы, заполните форму ниже.
+            <br>
+            Они будут закреплены за вашим номером телефона и действовать в течении 14 дней.
+          </p>
+
+          <div class="answer-test__elements">
+            <div class="answer-test__elements">
+              <div class="answer-test__element">
+                <img src="./assets/request-paints.png" alt="paints">
+                <h4 class="answer-test__element-header">Ваши самые интересные идеи и задумки</h4>
+                <p class="answer-test__element-text">Главное дайте нам идею, а наши дизайнеры помогут ее усилить, используя наработанный за 14 лет опыт</p>
+              </div>
+
+              <div class="answer-test__element">
+                <img src="./assets/request-pc.png" alt="pc">
+                <h4 class="answer-test__element-header">Графические программы последних версий</h4>
+                <p class="answer-test__element-text">Наши дизайнеры готовы сделать вам разборчивую 3D-модель, чтобы вы могли расчленять ее на части и менять размеры и цвета каждой детали.</p>
+              </div>
+
+              <div class="answer-test__element">
+                <img src="./assets/request-builder.png" alt="builder">
+                <h4 class="answer-test__element-header">Хороший и умелый замерщик с фруктами</h4>
+                <p class="answer-test__element-text">Без точных измерений вашего помещения сделать хороший шкаф не получится. А фрукты от замерщика просто для хорошего настроения!</p>
+              </div>
+
+              <div class="answer-test__element">
+                <img src="./assets/request-drill.png" alt="drill">
+                <h4 class="answer-test__element-header">Европейское оборудование и первоклассные столяры</h4>
+                <p class="answer-test__element-text">На нашем производстве как раз работают люди, за плечами которых более 5-ти лет практики. Немецкое оборудование тоже нас не подводит.</p>
+              </div>
+
+              <div class="answer-test__element">
+                <img src="./assets/request-truck.png" alt="truck">
+                <h4 class="answer-test__element-header">Бесплатные доставка и монтаж шкафа</h4>
+                <p class="answer-test__element-text">Изготовить шкаф - это только полбеды! Его еще нужно аккуратно доставить в дом и сделать уборку пылесосом после монтажа. Хотите этим заморачиваться?</p>
+              </div>
+            </div>
+          </div>
+
+          <form action="" name="form-designer" class="second-main-form">
+            <h3 class="second-main-form__header">Наш менеджер свяжется с вами по указанному номеру!</h3>
+            <div class="second-main-form__input-wrap">
+              <label>
+                Введите ваше имя
+                <input type="text" placeholder="Например, Иван">
+              </label>
+              <label>
+                Введите ваш телефон
+                <input type="text" placeholder="+375 (ХХ) ХХХ-ХХ-ХХ">
+              </label>
+              <label>
+                Введите ваш e-mail
+                <input type="email" placeholder="Ivan33@mail.ru">
+              </label>
+              <button>
+                <p>Оставить заявку</p>
+                <p>+ получить подарок</p>
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="designer-section">
+          <h2 class="designer-section__header">Спасибо за вашу заявку, наш дизайнер свяжется с вами в течении дня!</h2>
+          <div class="designer-section__designer">
+            <img src="./assets/main-second/designer.png" alt="designer" class="designer-section__designer-avatar">
+            <p class="designer-section__designer-name">Имя, дизайнер</p>
+            <div class="designer-section__designer-text">
+              <p>Закончил Московский гуманитарно-экономический институт, специальность дизайнер интерьеров.</p>
+              <p>Разработал более  100 уникальных дизайнов для разной мебели.</p>
+              <p>Создает эскизы от руки и графических программах.</p>
+              <p>Умеет общаться с клиентами на одном языке.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bonus">
+          <h2 class="bonus__header">И еще наш дизайнер консультирует клиентов в офисе!</h2>
+          <p class="bonus__subheader">Если сейчас запишетесь на живую встречу с Имя, сможете поучить:</p>
+          <div class="bonus-bonuses">
+            <div class="bonus-bonuses__bonus designer-bonus">
+              <div class="designer-bonus__img">
+                <img src="./assets/main-second/bonus-plan.png" alt="bonus">
+              </div>
+              <h4 class="designer-bonus__header">Эскизы вашей мебели сразу после консультации</h4>
+              <p class="designer-bonus__text">На встрече дизайнер обсудит кадую полочку в вашем шкафе и быстро набросает для вас эскизные модели.</p>
+            </div>
+
+            <div class="bonus-bonuses__bonus designer-bonus">
+              <div class="designer-bonus__img">
+                <img src="./assets/main-second/bonus-skills.png" alt="bonus">
+              </div>
+              <h4 class="designer-bonus__header">Живые дказательства нашей экспертности</h4>
+              <p class="designer-bonus__text">В нашем офисе вы увидите сертификаты и сможете пообщаться с узкопрофильными специалистами по вашим вопросам.</p>
+            </div>
+
+            <div class="bonus-bonuses__bonus designer-bonus">
+              <div class="designer-bonus__img">
+                <img src="./assets/main-second/bonus-grapes.png" alt="bonus">
+              </div>
+              <h4 class="designer-bonus__header">Бесплатные сладкие угощения</h4>
+              <p class="designer-bonus__text">Мы угостим вас вкусностями, чтобы приукрасить наше общение!</p>
+            </div>
+
+            <div class="bonus-bonuses__bonus designer-bonus">
+              <div class="designer-bonus__img">
+                <img src="./assets/main-second/bonus-engineer.png" alt="bonus">
+              </div>
+              <h4 class="designer-bonus__header">Возможность посетить наше производство</h4>
+              <p class="designer-bonus__text">Сможете своими глазами увидеть, как качественно работают наши столяры и производственное оборудование.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="consultation">
+          <h2 class="consultation__header">Помните, что живая консультация - услуга платная. "Имя" загружен проектами и может принимать бесплатно только 3 человека в неделю.</h2>
+          <p class="consultation__subheader">Поэтому записывайтесь, пока есть возможность, сохраните бонусы!</p>
+          <form action="" name="form-designer" class="second-main-form">
+            <h3 class="second-main-form__header">Не забудьте указать время, когда менеджер может перезвонить вам...</h3>
+            <div class="second-main-form__input-wrap">
+              <label>
+                Введите ваше имя
+                <input type="text" placeholder="Например, Иван">
+              </label>
+              <label>
+                Введите ваш телефон
+                <input type="text" placeholder="+375 (ХХ) ХХХ-ХХ-ХХ">
+              </label>
+              <label>
+                Желаемое время звонка
+                <input type="date" placeholder="Например, в среду 18.00">
+              </label>
+              <button>
+                <p>Встретиться с дизайнером</p>
+                <p>и получить еще бонусы</p>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
       <footer class="footer">
         <div class="footer__section">
           <div class="footer__logo-wrap">
@@ -732,6 +878,26 @@
           </div>
         </div>
       </footer>
+
+
+      <div class="modal-wrap">
+        <div class="modal-in">
+          <h2 class="modal-in__header">Не спешите уходить</h2>
+          <p class="modal-in__text modal-in__text_bold">Вы забыли ваш подарок - скидку 5% на покупку шкафа.</p>
+          <p class="modal-in__text">Оставьте заявку в форме ниже, пока не закончится обратный отсчёт!</p>
+          <p class="modal-in__time">00:24</p>
+          <img src="./assets/modal/modal-img.png" alt="modal-img" class="modal-in__img">
+          <form action="" name="modal-form" class="modal-form">
+            <label class="modal-form__label">
+              Введите ваш телефон
+              <input type="text" placeholder="+375 (XX) XXX-XX-XX" required class="modal-form__input">
+            </label>
+            <button type="submit" class="modal-form__button">Получить подарок</button>
+          </form>
+        </div>
+      </div>
+      
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -739,6 +905,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js">
+    </script>
 
   <script src="bundle.js"></script></body>
 </html>
